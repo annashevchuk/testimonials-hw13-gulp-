@@ -6,7 +6,6 @@
 
 body {
 	max-width: 1600px;
-	margin: 0 auto;
 }
 
 a:hover {
@@ -14,11 +13,13 @@ a:hover {
 }
 
 .wrapper {
+	width: 100%;
+	margin: 0 auto;
 	font-family: Tahoma, sans-serif;
 
 }
 
-header {
+.container {
 	background: url('../img/background_header.jpg');
 	padding: 60px 0;
 	background-size: cover;
@@ -37,9 +38,11 @@ h1 {
 
 h3 {
 	margin-bottom: 10px;
+	font-size: 22px;
+	font-weight: 200;
 }
 
-header p {
+.container p {
 	text-align: center;
 	color: white;
 	margin-bottom: 35px;
@@ -88,7 +91,11 @@ header p {
 	color: white;
 }
 
- .slick-slide .slick-current .slick-active .slick-center {
+.slick-slide {
+	opacity: 0.5;
+}
+
+ .slick-center {
 	opacity: 1;
 }
 
@@ -102,14 +109,6 @@ header p {
 	right: 0;
 	z-index: 2;
 	cursor: pointer;
-}
-
-.slick-slide {
-	opacity: 0.5;
-}
-
-.slick-active {
-
 }
 
 /*---end slider----*/
@@ -199,6 +198,7 @@ footer {
 .message {
 	height: 160px;
 	border: none;
+	color: white;
 }
 
 .icon,
@@ -215,7 +215,8 @@ footer {
 
 h2 {
 	margin-bottom: 60px;
-	font-size: 22px;
+	font-size: 36px;
+	font-weight: bold;
 }
 
 .super-button {
